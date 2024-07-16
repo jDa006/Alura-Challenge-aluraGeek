@@ -1,0 +1,15 @@
+.add-product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+}
+
+.add-product__title {
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}

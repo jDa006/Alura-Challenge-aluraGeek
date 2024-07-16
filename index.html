@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./css/styles.css"
+    />
+    <title>AluraGeek</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo1"
+        src="./img/Logo personal.png"
+        alt="logo"
+      />
+      <img
+        class="header__logo"
+        src="./img/corazones.svg"
+        alt="corazones"
+      />
+      <p class="header__text">AluraGeek</p>
+    </header>
+    <main class="main">
+      <section class="add-product">
+        <p class="add-product__title">AGREGAR PRODUCTO:</p>
+        <form
+          id="form"
+          class="form"
+          action="#"
+          novalidate
+          autocomplete="off"
+        >
+          <div class="form__controls">
+            <div class="form__controls-container">
+              <label
+                class="form__label"
+                for="name"
+                >Nombre</label
+              >
+              <input
+                class="form__input-text"
+                type="text"
+                id="name"
+                name="name"
+                required
+                maxlength="70"
+                placeholder="nombre..."
+              />
+            </div>
+            <span class="form__error-message"
+              >Este campo es requerido y debe contener máximo 70
+              caracteres.</span
+            >
+          </div>
+
+          <div class="form__controls">
+            <div class="form__controls-container">
+              <label
+                class="form__label"
+                for="precio"
+                >Precio</label
+              >
+              <input
+                class="form__input-text"
+                type="number"
+                id="precio"
+                name="precio"
+                required
+                min="0"
+                max="10000000"
+                placeholder="precio..."
+              />
+            </div>
+            <span class="form__error-message">Este campo es requerido. </span>
+          </div>
+
+          <div class="form__controls">
+            <div class="form__controls-container">
+              <label
+                class="form__label"
+                for="imagen"
+                >Imágen</label
+              >
+              <input
+                class="form__input-text"
+                type="text"
+                id="imagen"
+                name="imagen"
+                required
+                placeholder="imágen..."
+              />
+            </div>
+            <span class="form__error-message">Este campo es requerido.</span>
+          </div>
+          <div class="buttons">
+            <button
+              class="button button__enviar"
+              type="submit"
+              id="botonEnviar"
+            >
+              Enviar
+            </button>
+            <button
+              class="button button__limpiar"
+              type="reset"
+              id="botonLimpiar"
+            >
+              Limpiar
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section
+        id="card-section"
+        class="card-section"
+      >
+        <h1 class="card-section__title">MIS PRODUCTOS:</h1>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      <div class="attribution__content">
+        <img
+          class="attribution__logo"
+          src="./img/corazones.svg"
+          alt="corazones"
+        />
+        <p class="attribution__title">AluraGeek</p>
+      </div>
+      <div class="attribution__text">
+        <p class="attribution__text1">Jaciel D.A.</p>
+
+        <p class="attribution__text2">Alura Latam- 2024</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="./js/controllers/main.js"
+    ></script>
+  </body>
+</html>

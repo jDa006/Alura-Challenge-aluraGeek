@@ -1,0 +1,53 @@
+.attribution {
+  background-color: rgba(83, 0, 200, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.attribution__content {
+  display: flex;
+  align-items: center;
+}
+
+.attribution__logo {
+  width: 138px;
+  height: 56px;
+ }
+
+ .attribution__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 16px;
+  color: rgba(229, 229, 229, 1);
+ }
+
+ .attribution__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+ }
+
+.attribution__text1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: rgba(229, 229, 229, 1);
+}
+
+.attribution__text2 {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+  color: rgba(229, 229, 229, 1);
+}
